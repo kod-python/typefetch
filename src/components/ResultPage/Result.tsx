@@ -38,8 +38,8 @@ const Result = () => {
 
       <div className="container flex flex-wrap mx-auto ">
         {drinks.map((drink) => (
-          <div key={drink.idDrink} className="flex p-[0px]  w-1/3 px-[100px]">
-            <div className="border shadow-lg flex-col items-center justify-center p-[40px] m-[30px] hover:scale-[1.2]">
+          <div key={drink.idDrink} className="flex w-1/3 ">
+            <div className="shadow-lg flex-col items-center justify-center p-[40px] m-[30px] hover:scale-[1.2]">
               <img
                 src={drink.strDrinkThumb}
                 alt="drink-log"
