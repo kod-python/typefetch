@@ -26,7 +26,7 @@ const DetailPage = ({ params }: { params: { id: string } }) => {
 
   return (
     <div className="w-[1000px] mx-auto p-10">
-      <section className="text-3xl font-bold  mb-10 flex gap-[100px]  space-x-10">
+      <section className="text-3xl font-bold  mb-10 flex gap-[10px] justify-center  space-x-10">
         <Link href="/">
           <span>
             <FaChevronLeft className="text-blue-700"/>
@@ -38,10 +38,13 @@ const DetailPage = ({ params }: { params: { id: string } }) => {
       {drinks &&
         drinks.map((drink) => (
           <section key={drink.idDrink}>
-            <img src={drink.strDrinkThumb} alt="drink-logo" />
-            <h2>{drink.strDrink}</h2>
-            <p>{drink.strCategory}</p>
-            <p>{drink.strInstructions}</p>
+            <div className="flex justify-center">
+            <img src={drink.strDrinkThumb} alt="drink-logo" className="w-[500px]"/>
+            </div>
+           
+            <h2 className="text-center">{drink.strDrink}</h2>
+            <p className="text-center">{drink.strCategory}</p>
+            <p className="text-center">{drink.strInstructions}</p>
           </section>
         ))}
     </div>
