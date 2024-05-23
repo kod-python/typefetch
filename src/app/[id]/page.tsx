@@ -26,13 +26,13 @@ const DetailPage = ({ params }: { params: { id: string } }) => {
 
   return (
     <div className="w-[1000px] mx-auto p-10">
-      <section className="text-3xl font-bold underline mb-10 flex justify-center space-x-3">
+      <section className="text-3xl font-bold  mb-10 flex gap-[100px]  space-x-10">
         <Link href="/">
           <span>
-            <FaChevronLeft />
+            <FaChevronLeft className="text-blue-700"/>
           </span>
         </Link>
-        <h1>Champagne Detail Page</h1>
+        <h1 className="text-blue-700 font-bold text-[2.2rem]">Champagne Detail Page</h1>
       </section>
 
       {drinks &&
